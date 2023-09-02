@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/cece728ee0.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <section class="flex flex-row justify-between pr-3 mt-7 mb-4">
+            <img src="imgs/Logo.png" alt="">
+            <h1 class="font-extrabold text-red-600 text-4xl">Blog</h1>
+            <button onclick="window.location.href='index.html'" class="btn bg-red-600 text-white">Home</button>
+        </section>
+        <hr>
+    </header>
+    <main>
+        <div class="grid grid-cols-1 w-4/5 lg:relative lg:left-40 gap-10  mt-14 mb-8">
+            <div class="collapse  bg-red-700 ">
+                <input type="checkbox" /> 
+                <div class="collapse-title text-white text-xl font-medium">
+                    Discuss the scope of var, let, and const.
+                </div>
+                <div class="collapse-content"> 
+                  <p>==>var has function-level scope and is hoisted.
+                    <br>
+                    ==>let and const have block-level scope and are not hoisted.
+                    <br>
+                    ==>Use let and const for better scoping and to avoid hoisting-related issues in modern JavaScript.</p>
+                </div>
+              </div>
+            <div class="collapse bg-red-700">
+                <input type="checkbox" /> 
+                <div class="collapse-title text-white  text-xl font-medium">
+                    Tell us the use cases of null and undefined.
+                </div>
+                <div class="collapse-content"> 
+                  <p>==>Use null to represent an intentional absence of any object value.
+                    <br>
+                    ==>Use undefined to represent an uninitialized or missing value, often the default value of uninitialized variables.</p>
+                </div>
+              </div>
+            <div class="collapse  bg-red-700">
+                <input type="checkbox" /> 
+                <div class="collapse-title text-white  text-xl font-medium">
+                    What do you mean by REST API?
+                </div>
+                <div class="collapse-content"> 
+                  <p>In short, a REST API (Representational State Transfer Application Programming Interface) is a set of rules and conventions for building and interacting with web services. It uses standard HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources, which are represented as URLs. REST APIs are designed to be stateless and scalable, making them a popular choice for building web services that can be easily accessed and understood by various clients and platforms.</p>
+                </div>
+              </div>
+            
+        </div>
+    </main>
+
+</body>
+
+</html>

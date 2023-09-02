@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+
+    <!-- links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/cece728ee0.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <section class="flex flex-row justify-between pr-3 mt-7 mb-4">
+            <img src="imgs/Logo.png" alt="">
+            <button id="sort-by-views-button" class="btn text-center lg:mr-40">Sort by view</button>
+            <button onclick="window.location.href='blog.html'" class="btn bg-red-600 text-white">Blog</button>
+        </section>
+        <hr>
+    </header>
+
+    <main class="container mx-auto mt-5">
+        <!-- category btn -->
+        <section class="text-center">
+            <div id="btn-container"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-md md:ml-32 lg:ml-96 gap-3">
+
+            </div>
+
+        </section>
+
+        <!-- no video -->
+        <section>
+            <div id="no-video-container" class=" justify-center mb-44 flex flex-col items-center mt-48 hidden">
+                <img  src="imgs/Icon.png" alt="" srcset="">
+                <p class="mt-7 font-extrabold text-4xl w-96 text-center"> Oops!! Sorry, There is no content here </p>
+            </div>
+
+        </section>
+        <!-- video container -->
+        <section>
+            <div id="videos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 gap-5">
+
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/videos.js"></script>
+</body>
+
+</html>
